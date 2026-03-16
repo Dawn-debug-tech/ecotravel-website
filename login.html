@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+</head>
+
+<body>
+
+<h2>Login</h2>
+
+<input type="email" id="email" placeholder="Email"><br><br>
+
+<input type="password" id="password" placeholder="Password"><br><br>
+
+<button onclick="login()">Login</button>
+
+<p id="message"></p>
+
+<script>
+
+function login(){
+
+let email=document.getElementById("email").value
+let password=document.getElementById("password").value
+
+let savedEmail=localStorage.getItem("email")
+let savedPassword=localStorage.getItem("password")
+
+if(email===savedEmail && password===savedPassword){
+document.getElementById("message").innerText="Login Successful"
+window.location="index.html"
+}
+else{
+document.getElementById("message").innerText="Invalid Login"
+}
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Signup</title>
+</head>
+
+<body>
+
+<h2>Sign Up</h2>
+
+<input type="email" id="email" placeholder="Email"><br><br>
+
+<input type="password" id="password" placeholder="Password"><br><br>
+
+<button onclick="signup()">Create Account</button>
+
+<p id="message"></p>
+
+<script>
+
+function signup(){
+
+let email=document.getElementById("email").value
+let password=document.getElementById("password").value
+
+let pattern=/^(?=.*[A-Z])(?=.*[0-9]).{8,}$/
+
+if(!pattern.test(password)){
+document.getElementById("message").innerText=
+"Password must contain 8 characters, a number and uppercase letter"
+return
+}
+
+localStorage.setItem("email",email)
+localStorage.setItem("password",password)
+
+document.getElementById("message").innerText="Account Created"
+
+}
+
+</script>
+
+</body>
+</html>

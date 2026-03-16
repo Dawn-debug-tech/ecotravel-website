@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoTravel - Destinations</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e293b,#0f766e);
+color:white;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+}
+
+.logo{font-weight:700;font-size:22px;}
+
+.menu{display:flex;gap:30px;}
+
+.menu a{
+color:white;
+text-decoration:none;
+}
+
+.page{
+padding:80px 8%;
+text-align:center;
+}
+
+.page h1{
+margin-bottom:40px;
+font-size:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,0.07);
+padding:25px;
+border-radius:20px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+border-radius:15px;
+margin-bottom:15px;
+}
+
+footer{
+padding:40px 8%;
+background:rgba(0,0,0,0.3);
+margin-top:60px;
+text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">EcoTravel</div>
+
+<div class="menu">
+<a href="index.html">Home</a>
+<a href="destinations.html">Destinations</a>
+<a href="sustainability.html">Sustainability</a>
+<a href="community.html">Community</a>
+<a href="about.html">About</a>
+</div>
+</nav>
+
+<section class="page">
+
+<h1>Eco-Friendly Destinations</h1>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+<h3>Bali Eco Retreat</h3>
+<p>Sustainable jungle stays and nature tours.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+<h3>Iceland Nature Trails</h3>
+<p>Low-impact travel experiences in nature.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+<h3>Maldives Coral Tours</h3>
+<p>Support coral reef conservation.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 EcoTravel</p>
+</footer>
+
+</body>
+</html>
